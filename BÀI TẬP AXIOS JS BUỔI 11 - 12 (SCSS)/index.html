@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Font Google  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,800;1,500;1,600;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="tabulaNav container navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="./img/crest.png" alt="#" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#tabulaNavbar"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-bars"></i>
+          </span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="tabulaNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Elements</a>
+            </li>
+          </ul>
+          <div class="phonenumber">
+            <a href="#">
+              <i class="fa fa-phone"></i>
+              <span>(+1) 555 234-8765</span>
+            </a>
+          </div>
+          <div class="socials">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- carousel -->
+    <section class="carousel">
+      <div class="carousel__img__top">
+        <img src="./img/yellow_top_wave_01.png" alt="#" />
+      </div>
+      <div class="container">
+        <div class="carousel__content">
+          <div class="row">
+            <div class="content col-12 col-sm-12 col-md-12 col-lg-5 col-xl-6">
+              <h3>ABOUT US</h3>
+              <h1>The language teaching experts</h1>
+            </div>
+            <div
+              class="content__img content col-12 col-sm-12 col-md-12 col-lg-5 col-xl-6"
+            >
+              <img src="./img/hero_team.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel__img__bottom">
+        <img src="./img/Violet_top_left_wave.png" alt="#" />
+      </div>
+    </section>
+    <!-- teacher -->
+    <section class="about__teacher">
+      <div class="themes">
+        <div class="container">
+          <div class="teacher__content"></div>
+        </div>
+      </div>
+      <div class="img__teacher__footer">
+        <img src="./img/Wave_White_bottom_right_shape_01.png" alt="#" />
+      </div>
+    </section>
+
+    <!-- Fill  in -->
+    <section class="fillin_main">
+      <div class="container">
+        <div class="fillin">
+          <div class="row">
+            <div
+              class="fillin__img__top content col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7"
+            >
+              <img src="./img/conatct_inner.png" alt="#" />
+            </div>
+            <div
+              class="fillin__content content col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5"
+            >
+              <div class="content">
+                <h1>Find Your Course</h1>
+                <div class="content__fillin">
+                  <div class="infomation">
+                    <div class="infomation__user">
+                      <i class="fa fa-user"></i>
+                      <input
+                        type="text"
+                        id="fname"
+                        name="firstname"
+                        placeholder="Name"
+                      />
+                    </div>
+
+                    <div class="infomation__user">
+                      <i class="fa-solid fa-envelope"></i>
+                      <input
+                        type="text"
+                        id="lname"
+                        name="lastname"
+                        placeholder="Email"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="language">
+                    <i class="fa fa-graduation-cap"></i>
+                    <select id="country" name="country">
+                      <option value="0">English</option>
+                      <option value="1">French</option>
+                      <option value="2">Spanish</option>
+                      <option value="3">German</option>
+                    </select>
+                  </div>
+                  <div class="comment">
+                    <span class="icon">
+                      <i class="fa-solid fa-message"></i>
+                    </span>
+                    <textarea
+                      class="text"
+                      cols="3"
+                      rows="5"
+                      placeholder="Message..."
+                    ></textarea>
+                  </div>
+
+                  <button class="btnfillin">SEND</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fillin__img__bottoms">
+        <img src="./img/accent_bottom_wave_01.png" alt="#" />
+      </div>
+    </section>
+    <footer>
+      <div class="footer__content container">
+        <div class="contact__us">
+          <h1>Contact us</h1>
+          <div class="contact__info">
+            <i class="fa-solid fa-location-dot icon"></i>
+            <p>Franklin St, Greenpoint Ave</p>
+          </div>
+          <div class="contact__info">
+            <i class="fa-solid fa-phone-flip icon"></i>
+            <p>+2342 5446 67</p>
+          </div>
+          <div class="contact__info">
+            <i class="fa-solid fa-clock icon"></i>
+            <p>Monday - Friday: 8 AM - 5 PM</p>
+          </div>
+          <div class="footer__socials">
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <div class="links">
+          <h1>Quick Links</h1>
+          <ul>
+            <li>Home</li>
+            <hr />
+            <li>Courses</li>
+            <hr />
+            <li>Schedule</li>
+            <hr />
+            <li>Blog</li>
+            <hr />
+          </ul>
+        </div>
+        <div class="about">
+          <h1>About</h1>
+          <ul>
+            <li>About Us</li>
+            <hr />
+            <li>Events</li>
+            <hr />
+            <li>Get Quote</li>
+            <hr />
+            <li>Contact</li>
+            <hr />
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h1>Newsletter</h1>
+          <input type="text" placeholder="Email" />
+          <button>SUBSCRIBE</button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+      integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/99dee177a6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+      integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/service.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

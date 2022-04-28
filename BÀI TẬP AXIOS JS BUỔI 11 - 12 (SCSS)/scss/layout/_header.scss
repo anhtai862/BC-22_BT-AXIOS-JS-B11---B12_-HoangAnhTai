@@ -1,0 +1,63 @@
+header {
+    position: relative; 
+    z-index: 99;
+    // .tabulaNav{
+    //     position: fixed;
+    //     top: 0;
+    //     left: 300px;
+    // }
+    #tabulaNavbar {
+        justify-content: space-between;
+        padding: 0;
+        img{
+            width: 80px;
+        }
+        .links {
+            display: flex;
+        }
+        .nav-item {
+            padding: 0px 20px 0px 0px;
+            a {
+                transition: all 0.3s;
+                @include styleText($fs-1, $fw-4, $color-dark-1);
+                &:hover {
+                    @include styleText($fs-1, $fw-4, $color-pink-1);
+                }
+            }
+        }
+        .phonenumber{
+            padding-top: $pd-1;
+            padding: 0px 20px;
+            a {
+                padding: $pd-3;
+                border-radius: $bdr-2;
+                background-color: $color-pink-1;
+                border: none;
+                color: $color-light-1;
+                font-size: $fs-1;
+                margin-top: $mg-5;
+                text-decoration: none;
+                transition: 0.5s;
+                &:hover {
+                    background-color: $color-light-1;
+                    color: $color-pink-1;
+                    box-shadow: 0 0 0 1px $color-pink-1 inset; 
+                }
+            }
+            span {
+                margin-left: $mg-4;
+            }
+        }
+        .socials {
+            margin-top: $mg-4;
+            a{
+                padding-left: $pd-2;
+                text-decoration: none;
+                color: $color-dark-1;
+                &:hover {
+                    color: $color-pink-1;
+                }
+            }
+        }
+    }
+}

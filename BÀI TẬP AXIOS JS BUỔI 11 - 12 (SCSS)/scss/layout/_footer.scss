@@ -1,0 +1,83 @@
+footer{
+    position: relative;
+    background-image: url(../img/footer_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    .footer__content{
+        display: grid;
+        grid-gap: 30px;
+        justify-content: space-around;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        position: relative;
+        padding: 150px 0px;
+        z-index: 5;
+        h1 {
+            @include styleText ($fs-5,$fw-5,$color-light-1);
+            padding-bottom: 30px;
+        }
+        
+        p,li {
+            list-style: none;
+            line-height: 20px;
+            @include styleText ($fs-1,$fw-3,$color-light-1);
+        }
+        .contact__us{
+            .contact__info{
+                display: flex;
+                gap: 5px;
+                i{
+                    justify-content: center;
+                    color: $color-light-1;
+                    width: 20px;
+                }
+            }
+            .footer__socials{
+                margin-top: 15px;
+                i{
+                    // padding-right: 15px;
+                    color: $color-light-1;
+                }
+            }
+        }
+        .newsletter{
+            justify-content: center;
+            input{
+                text-align: center;
+                padding: 15px 100px;
+                width: 100%;
+                border: none;
+                border-radius: 30px;
+                background-color: $color-pink-2;
+                border: 1px solid rgba(255,255,255,.1);
+                outline: 0;
+                color: #ffffff;
+                &::placeholder{
+                    @include styleText ($fs-1,$fw-4,$color-light-1);
+                }
+                &:focus{
+                    border: 1px solid #ffffff;
+                }
+            }
+            button{
+                margin-top: 10px;
+                padding: 15px 0px;
+                width: 100%;
+                background-color: $color-light-1;
+                @include styleText ($fs-1,$fw-4,$color-dark-1);
+                border: none;
+                outline: 0;
+                border-radius: 30px ;
+                transition: all 0.5s;
+                border: 1px solid $color-light-1;
+                &:hover{
+                    background-color: $color-pink-2;
+                    @include styleText ($fs-1,$fw-4,$color-light-1);
+                }
+            }
+        }
+        
+    }
+    
+}

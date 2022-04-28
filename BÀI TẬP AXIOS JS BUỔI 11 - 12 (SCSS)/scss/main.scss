@@ -1,0 +1,15 @@
+//Helper
+@import "./helper/variables";
+@import "./helper/mixin";
+
+//Base
+@import "../scss/base/reset" ;
+
+
+
+//Layouts
+@import "../scss/layout/header" ;
+@import "../scss/layout/_carousel.scss" ;
+@import "../scss/layout/teacher" ;
+@import "../scss/layout/fillin" ;
+@import "../scss/layout/footer" ;

@@ -1,0 +1,125 @@
+.fillin_main{
+    align-items: center;
+    position: relative;
+    padding-top: $pd-7;
+    .fillin {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 60px;
+        padding-bottom: 40px;
+        .fillin__img__top{
+            z-index: 2;
+        }
+    
+        .fillin__content {
+            border-radius: 10px;
+            box-shadow: 0 30px 30px -10px rgba(0, 0, 0 , 0.2) ; 
+            margin-bottom: 50px;
+            background-color: $color-light-1;
+            z-index: 3;
+            .content{
+                padding: 0px 25px;
+                position: relative;
+                
+                h1 {
+                    padding: $pd-5 0px;
+                    @include styleText ($fs-7,$fw-5,$color-dark-1)
+                }
+                .infomation{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 20px;
+                    .infomation__user{
+                        flex: 1;
+                    }
+                    i {
+                        position: absolute  ;
+                        padding-top: 15px;
+                        padding-left: 10px;
+                        color: $color-pink-1;
+                        pointer-events: none;
+                    }
+                    input {
+                        outline: 0;
+                        padding: 10px 0px 10px 30px ;
+                        border: 1px solid rgba(0,0,0,.1);
+                        border-radius: 20px;
+                        width: 100%;
+                        &:focus{
+                            border: 1px solid $color-gray-1;
+                        }
+                    }
+                    
+                }
+                
+                .language{
+                    margin-top: 20px;
+                    i{
+                        position: absolute  ;
+                        padding-top: 12px;
+                        padding-left: 8px;
+                        color: $color-pink-1;
+                        pointer-events: none;
+                    }
+                    #country {
+                        outline: 0;
+                        padding: 10px 0px 10px 30px ;
+                        border: 1px solid rgba(0,0,0,.1);
+                        border-radius: 20px;
+                        width: 100%;
+                        &:focus{
+                            border: 1px solid $color-gray-1;
+                        }
+                    }
+                }
+                .comment{
+                    margin-top: 20px;
+                    i {
+                        position: absolute  ;
+                        padding-top: 15px;
+                        padding-left: 10px;
+                        color: $color-pink-1;   
+                        pointer-events: none;
+                    }
+                    textarea {
+                        outline: 0;
+                        padding: 10px 0px 10px 30px ;
+                        border: 1px solid rgba(0,0,0,.1);
+                        border-radius: 20px;
+                        width: 100%;
+                        &:focus{
+                            border: 1px solid $color-gray-1;
+                        }
+                    }
+                }
+                .btnfillin {
+                    @include styleText($fs-2,$fw-4,$color-light-1);
+                    padding: $pd-3 50px;
+                    border-radius: $bdr-2;
+                    background-color: $color-pink-1;
+                    border: none;
+                    margin-top: $mg-8;
+                    margin-bottom: $mg-8;
+                    transition: 0.5s;
+                    outline: 0;
+                    &:hover {
+                        background-color: $color-light-1;
+                        color: $color-pink-1;
+                        box-shadow: 0 0 0 1px $color-pink-1 inset;    
+                    }
+                }
+            }
+        }
+
+    }
+    .fillin__img__bottoms{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        img{
+            width: 100%;
+        }
+    }
+}
